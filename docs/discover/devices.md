@@ -18,7 +18,5 @@ Current supported devices include:
 - Redmi Note 7 `lavender`
 - Redmi Note 9 Pro 5G/ Mi 10i 5G/ Mi 10T Lite/ Mi 10T Lite EEA `gauguin`
 - Redmi Note 10 Pro `sweet`
-
-#### Read the release notes for latest updates [here](notes/r5x/latest.md) ####
  
 More devices may come in the future, so stay tuned.
