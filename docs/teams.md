@@ -13,4 +13,4 @@ sidebar_position: 7
 - [wHoEMi](https://github.com/wHo-EM-i) - Core / Helper
 - [TheKid](https://github.com/itsmethekid) - Redmi Note 9 Pro 5G , Mi 10i 5G , Mi 10T Lite , Mi 10T Lite EEA Dev
 - [Yash](https://github.com/ayash92) - The Redmi Note 9S , Redmi Note 9Pro, Redmi Note 10Lite, Redmi Note 9Pro Max, POCO M2 Pro Dev
-- [Gian Paolo Estacio](https://github.com/eun0115) - Realmeme 5 Gawd Dev
+- [Gian Paolo Estacio](https://github.com/eun0115) - Realme 5 Dev
