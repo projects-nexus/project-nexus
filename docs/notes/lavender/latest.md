@@ -14,5 +14,7 @@ sidebar_position: 1
 - Don't flash any module which changes cpu frequency.
 
 ### Download ###
+[Download link](https://downloads.nexuskernel.workers.dev/0:/lavender/x9.5/)
 
-Please move to [Downloads section](../../download/lavender/latest)
+
+**WIP:Please move to [Downloads section](../../download/lavender/latest)**
