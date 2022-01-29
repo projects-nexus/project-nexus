@@ -1,0 +1,38 @@
+:root {
+  --ifm-color-primary: #ff0000;
+  --ifm-color-primary-dark: #e60000;
+  --ifm-color-primary-darker: #d90000;
+  --ifm-color-primary-darkest: #b30000;
+  --ifm-color-primary-light: #ff1a1a;
+  --ifm-color-primary-lighter: #ff2626;
+  --ifm-color-primary-lightest: #ff4d4d;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #ff0000;
+  --ifm-color-primary-dark: #e60000;
+  --ifm-color-primary-darker: #d90000;
+  --ifm-color-primary-darkest: #b30000;
+  --ifm-color-primary-light: #ff1a1a;
+  --ifm-color-primary-lighter: #ff2626;
+  --ifm-color-primary-lightest: #ff4d4d;
+  --ifm-background-color: #000000;
+}
+
+/* Overriding root Infima variables */
+html[data-theme='dark'] {
+  --ifm-color-primary: #ff0000;
+}
+/* Styling one class specially in dark mode */
+html[data-theme='dark'] .purple-text {
+  color: plum;
+}
+.banner {
+  padding: 4rem;
+}
+/** In mobile view, reduce the padding */
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
