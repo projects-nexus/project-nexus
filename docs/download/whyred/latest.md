@@ -13,9 +13,9 @@ you point the finger at me for messing up your device, we will laugh at you. Har
 :::
 
 
-### For Android 9+ ###
+### Redmi Note 5 Pro : [Download](https://downloads.nexuskernel.workers.dev/0:/whyred/4.4/Nexus-whyred-STABLE-EOL.zip) ###
 **EOL UPDATE for 4.4**
-##### Redmi Note 5 Pro : [Download](https://downloads.nexuskernel.workers.dev/0:/whyred/4.4/Nexus-whyred-STABLE-EOL.zip) #####
+##### For Android 9+ #####
 
 :::tip
  

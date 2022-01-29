@@ -14,9 +14,9 @@ you point the finger at me for messing up your device, we will laugh at you. Har
 :::
 
 
-### For Android 9+ ###
+### Redmi Note 7 : [Download](https://sourceforge.net/projects/nexuskernel/files/Lavender/)  ###
 
-##### Redmi Note 7 : [Download](https://sourceforge.net/projects/nexuskernel/files/Lavender/) #####
+##### For Android 9+ #####
 
 :::tip
  

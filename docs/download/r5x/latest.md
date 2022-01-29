@@ -14,9 +14,9 @@ you point the finger at me for messing up your device, we will laugh at you. Har
 :::
 
 
-### For Android 10+ ###
+### Realme 5/5i : [Download](https://kharame.tk/r5x/eun/Nexus%20Kernel) ###
 
-##### Realme 5/5i : [Download](https://kharame.tk/r5x/eun/Nexus%20Kernel) #####
+##### For Android 10+ #####
 
 :::tip
 
