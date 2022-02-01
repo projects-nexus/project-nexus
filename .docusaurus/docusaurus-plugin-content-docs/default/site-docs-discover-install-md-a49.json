@@ -1,0 +1,26 @@
+{
+  "unversionedId": "discover/install",
+  "id": "discover/install",
+  "title": "Installation Guide",
+  "description": "Flashing the kernel is easy.",
+  "source": "@site/docs/discover/install.md",
+  "sourceDirName": "discover",
+  "slug": "/discover/install",
+  "permalink": "/project-nexus/docs/discover/install",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/discover/install.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Supported Devices",
+    "permalink": "/project-nexus/docs/discover/devices"
+  },
+  "next": {
+    "title": "Nexus Kernel X3",
+    "permalink": "/project-nexus/docs/notes/miatoll/latest"
+  }
+}

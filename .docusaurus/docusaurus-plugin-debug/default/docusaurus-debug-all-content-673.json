@@ -1,0 +1,376 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/project-nexus/docs",
+          "tagsPath": "/project-nexus/docs/tags",
+          "versionEditUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs",
+          "versionEditUrlLocalized": "https://github.com/projects-nexus/project-nexus/edit/master/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": null,
+          "versionBadge": false,
+          "versionClassName": "docs-version-current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/thekid/Desktop/Nexus-Projects/project-nexus/sidebars.js",
+          "contentPath": "/home/thekid/Desktop/Nexus-Projects/project-nexus/docs",
+          "contentPathLocalized": "/home/thekid/Desktop/Nexus-Projects/project-nexus/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "discover/devices",
+              "id": "discover/devices",
+              "title": "Supported Devices",
+              "description": "Current supported devices include:",
+              "source": "@site/docs/discover/devices.md",
+              "sourceDirName": "discover",
+              "slug": "/discover/devices",
+              "permalink": "/project-nexus/docs/discover/devices",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/discover/devices.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Project Nexus",
+                "permalink": "/project-nexus/docs/discover/overview"
+              },
+              "next": {
+                "title": "Installation Guide",
+                "permalink": "/project-nexus/docs/discover/install"
+              }
+            },
+            {
+              "unversionedId": "discover/install",
+              "id": "discover/install",
+              "title": "Installation Guide",
+              "description": "Flashing the kernel is easy.",
+              "source": "@site/docs/discover/install.md",
+              "sourceDirName": "discover",
+              "slug": "/discover/install",
+              "permalink": "/project-nexus/docs/discover/install",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/discover/install.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Supported Devices",
+                "permalink": "/project-nexus/docs/discover/devices"
+              },
+              "next": {
+                "title": "Nexus Kernel X3",
+                "permalink": "/project-nexus/docs/notes/miatoll/latest"
+              }
+            },
+            {
+              "unversionedId": "discover/overview",
+              "id": "discover/overview",
+              "title": "Project Nexus",
+              "description": "Yet another Kernel organization which aims to provide kernel having best stability, performance, latest updates and moreover the best user experience.",
+              "source": "@site/docs/discover/overview.md",
+              "sourceDirName": "discover",
+              "slug": "/discover/overview",
+              "permalink": "/project-nexus/docs/discover/overview",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/discover/overview.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Supported Devices",
+                "permalink": "/project-nexus/docs/discover/devices"
+              }
+            },
+            {
+              "unversionedId": "notes/lavender/latest",
+              "id": "notes/lavender/latest",
+              "title": "Nexus Kernel V9.5",
+              "description": "By : Prashant",
+              "source": "@site/docs/notes/lavender/latest.md",
+              "sourceDirName": "notes/lavender",
+              "slug": "/notes/lavender/latest",
+              "permalink": "/project-nexus/docs/notes/lavender/latest",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/lavender/latest.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nexus Kernel",
+                "permalink": "/project-nexus/docs/notes/whyred/latest"
+              },
+              "next": {
+                "title": "Nexus Kernel V9.4",
+                "permalink": "/project-nexus/docs/notes/lavender/v9.4"
+              }
+            },
+            {
+              "unversionedId": "notes/lavender/v9.4",
+              "id": "notes/lavender/v9.4",
+              "title": "Nexus Kernel V9.4",
+              "description": "By : Prashant",
+              "source": "@site/docs/notes/lavender/v9.4.md",
+              "sourceDirName": "notes/lavender",
+              "slug": "/notes/lavender/v9.4",
+              "permalink": "/project-nexus/docs/notes/lavender/v9.4",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/lavender/v9.4.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nexus Kernel V9.5",
+                "permalink": "/project-nexus/docs/notes/lavender/latest"
+              },
+              "next": {
+                "title": "Team",
+                "permalink": "/project-nexus/docs/teams"
+              }
+            },
+            {
+              "unversionedId": "notes/miatoll/latest",
+              "id": "notes/miatoll/latest",
+              "title": "Nexus Kernel X3",
+              "description": "By : Yash",
+              "source": "@site/docs/notes/miatoll/latest.md",
+              "sourceDirName": "notes/miatoll",
+              "slug": "/notes/miatoll/latest",
+              "permalink": "/project-nexus/docs/notes/miatoll/latest",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/miatoll/latest.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation Guide",
+                "permalink": "/project-nexus/docs/discover/install"
+              },
+              "next": {
+                "title": "Nexus Kernel",
+                "permalink": "/project-nexus/docs/notes/r5x/latest"
+              }
+            },
+            {
+              "unversionedId": "notes/r5x/latest",
+              "id": "notes/r5x/latest",
+              "title": "Nexus Kernel",
+              "description": "By : don eun",
+              "source": "@site/docs/notes/r5x/latest.md",
+              "sourceDirName": "notes/r5x",
+              "slug": "/notes/r5x/latest",
+              "permalink": "/project-nexus/docs/notes/r5x/latest",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/r5x/latest.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nexus Kernel X3",
+                "permalink": "/project-nexus/docs/notes/miatoll/latest"
+              },
+              "next": {
+                "title": "Nexus Kernel",
+                "permalink": "/project-nexus/docs/notes/whyred/latest"
+              }
+            },
+            {
+              "unversionedId": "notes/whyred/latest",
+              "id": "notes/whyred/latest",
+              "title": "Nexus Kernel",
+              "description": "By : arnavpuranik",
+              "source": "@site/docs/notes/whyred/latest.md",
+              "sourceDirName": "notes/whyred",
+              "slug": "/notes/whyred/latest",
+              "permalink": "/project-nexus/docs/notes/whyred/latest",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/whyred/latest.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nexus Kernel",
+                "permalink": "/project-nexus/docs/notes/r5x/latest"
+              },
+              "next": {
+                "title": "Nexus Kernel V9.5",
+                "permalink": "/project-nexus/docs/notes/lavender/latest"
+              }
+            },
+            {
+              "unversionedId": "teams",
+              "id": "teams",
+              "title": "Team",
+              "description": "- Zeetaa - Founder / The Poco F2 Pro & F3 Dev",
+              "source": "@site/docs/teams.md",
+              "sourceDirName": ".",
+              "slug": "/teams",
+              "permalink": "/project-nexus/docs/teams",
+              "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/teams.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Nexus Kernel V9.4",
+                "permalink": "/project-nexus/docs/notes/lavender/v9.4"
+              }
+            }
+          ],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "category",
+                "label": "Discover",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "discover/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "discover/devices"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "discover/install"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Notes & Downloads",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "miatoll",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "notes/miatoll/latest"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "r5x",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "notes/r5x/latest"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "whyred",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "notes/whyred/latest"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "lavender",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "notes/lavender/latest"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "notes/lavender/v9.4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "id": "teams"
+              }
+            ]
+          },
+          "mainDocId": "discover/overview",
+          "categoryGeneratedIndices": []
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/project-nexus/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/project-nexus/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

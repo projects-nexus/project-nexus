@@ -1,0 +1,22 @@
+{
+  "unversionedId": "teams",
+  "id": "teams",
+  "title": "Team",
+  "description": "- Zeetaa - Founder / The Poco F2 Pro & F3 Dev",
+  "source": "@site/docs/teams.md",
+  "sourceDirName": ".",
+  "slug": "/teams",
+  "permalink": "/project-nexus/docs/teams",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/teams.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nexus Kernel V9.4",
+    "permalink": "/project-nexus/docs/notes/lavender/v9.4"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/project-nexus/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/project-nexus/docs",
+          "mainDocId": "discover/overview",
+          "docs": [
+            {
+              "id": "discover/devices",
+              "path": "/project-nexus/docs/discover/devices",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "discover/install",
+              "path": "/project-nexus/docs/discover/install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "discover/overview",
+              "path": "/project-nexus/docs/discover/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "notes/lavender/latest",
+              "path": "/project-nexus/docs/notes/lavender/latest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "notes/lavender/v9.4",
+              "path": "/project-nexus/docs/notes/lavender/v9.4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "notes/miatoll/latest",
+              "path": "/project-nexus/docs/notes/miatoll/latest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "notes/r5x/latest",
+              "path": "/project-nexus/docs/notes/r5x/latest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "notes/whyred/latest",
+              "path": "/project-nexus/docs/notes/whyred/latest",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "teams",
+              "path": "/project-nexus/docs/teams",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/project-nexus/docs/discover/overview",
+                "label": "discover/overview"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

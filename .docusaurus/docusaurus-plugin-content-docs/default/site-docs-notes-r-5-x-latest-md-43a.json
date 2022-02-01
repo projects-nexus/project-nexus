@@ -1,0 +1,26 @@
+{
+  "unversionedId": "notes/r5x/latest",
+  "id": "notes/r5x/latest",
+  "title": "Nexus Kernel",
+  "description": "By : don eun",
+  "source": "@site/docs/notes/r5x/latest.md",
+  "sourceDirName": "notes/r5x",
+  "slug": "/notes/r5x/latest",
+  "permalink": "/project-nexus/docs/notes/r5x/latest",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/r5x/latest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nexus Kernel X3",
+    "permalink": "/project-nexus/docs/notes/miatoll/latest"
+  },
+  "next": {
+    "title": "Nexus Kernel",
+    "permalink": "/project-nexus/docs/notes/whyred/latest"
+  }
+}

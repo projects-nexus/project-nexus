@@ -1,0 +1,26 @@
+{
+  "unversionedId": "notes/whyred/latest",
+  "id": "notes/whyred/latest",
+  "title": "Nexus Kernel",
+  "description": "By : arnavpuranik",
+  "source": "@site/docs/notes/whyred/latest.md",
+  "sourceDirName": "notes/whyred",
+  "slug": "/notes/whyred/latest",
+  "permalink": "/project-nexus/docs/notes/whyred/latest",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/whyred/latest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nexus Kernel",
+    "permalink": "/project-nexus/docs/notes/r5x/latest"
+  },
+  "next": {
+    "title": "Nexus Kernel V9.5",
+    "permalink": "/project-nexus/docs/notes/lavender/latest"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "notes/miatoll/latest",
+  "id": "notes/miatoll/latest",
+  "title": "Nexus Kernel X3",
+  "description": "By : Yash",
+  "source": "@site/docs/notes/miatoll/latest.md",
+  "sourceDirName": "notes/miatoll",
+  "slug": "/notes/miatoll/latest",
+  "permalink": "/project-nexus/docs/notes/miatoll/latest",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/miatoll/latest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/project-nexus/docs/discover/install"
+  },
+  "next": {
+    "title": "Nexus Kernel",
+    "permalink": "/project-nexus/docs/notes/r5x/latest"
+  }
+}

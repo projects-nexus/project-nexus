@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Project Nexus #
 
-Yet another Kernel organization which aims to provide Kernel having best stability, performance, latest updates and moreover the best user experience.
+Yet another Kernel organization which aims to provide kernel having best stability, performance, latest updates and moreover the best user experience.
 
 ### Installation guide ###
 

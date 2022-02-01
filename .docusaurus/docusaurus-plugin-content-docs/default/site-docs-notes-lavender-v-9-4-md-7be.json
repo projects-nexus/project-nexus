@@ -1,0 +1,26 @@
+{
+  "unversionedId": "notes/lavender/v9.4",
+  "id": "notes/lavender/v9.4",
+  "title": "Nexus Kernel V9.4",
+  "description": "By : Prashant",
+  "source": "@site/docs/notes/lavender/v9.4.md",
+  "sourceDirName": "notes/lavender",
+  "slug": "/notes/lavender/v9.4",
+  "permalink": "/project-nexus/docs/notes/lavender/v9.4",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/lavender/v9.4.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nexus Kernel V9.5",
+    "permalink": "/project-nexus/docs/notes/lavender/latest"
+  },
+  "next": {
+    "title": "Team",
+    "permalink": "/project-nexus/docs/teams"
+  }
+}

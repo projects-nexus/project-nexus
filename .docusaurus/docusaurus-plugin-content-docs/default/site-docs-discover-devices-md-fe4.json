@@ -1,0 +1,26 @@
+{
+  "unversionedId": "discover/devices",
+  "id": "discover/devices",
+  "title": "Supported Devices",
+  "description": "Current supported devices include:",
+  "source": "@site/docs/discover/devices.md",
+  "sourceDirName": "discover",
+  "slug": "/discover/devices",
+  "permalink": "/project-nexus/docs/discover/devices",
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/discover/devices.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Project Nexus",
+    "permalink": "/project-nexus/docs/discover/overview"
+  },
+  "next": {
+    "title": "Installation Guide",
+    "permalink": "/project-nexus/docs/discover/install"
+  }
+}
