@@ -1,76 +1,53 @@
 {
-  "/project-nexus/__docusaurus/debug-4e7": {
-    "component": "component---theme-debug-config-23-a-2ff"
+  "/project-nexus/markdown-page-a8d": {
+    "component": "1f391b9e",
+    "content": "393be207",
+    "__routeContextModule": "d6285553"
   },
-  "/project-nexus/__docusaurus/debug/config-2bd": {
-    "component": "component---theme-debug-config-23-a-2ff"
-  },
-  "/project-nexus/__docusaurus/debug/content-3a3": {
-    "component": "component---theme-debug-contentba-8-ce7",
-    "allContent": "allContent---project-nexus-docusaurus-debug-content-246-7e6"
-  },
-  "/project-nexus/__docusaurus/debug/globalData-f22": {
-    "component": "component---theme-debug-global-dataede-0fa"
-  },
-  "/project-nexus/__docusaurus/debug/metadata-557": {
-    "component": "component---theme-debug-site-metadata-68-e-3d4"
-  },
-  "/project-nexus/__docusaurus/debug/registry-f28": {
-    "component": "component---theme-debug-registry-679-501"
-  },
-  "/project-nexus/__docusaurus/debug/routes-a8b": {
-    "component": "component---theme-debug-routes-946-699"
-  },
-  "/project-nexus/blog/archive-1fd": {
-    "component": "component---theme-blog-archive-page-9-e-4-1d8",
-    "archive": "archive---project-nexus-blog-archive-9-e-9-796"
-  },
-  "/project-nexus/markdown-page-2a0": {
-    "component": "component---theme-mdx-page-1-f-3-b90",
-    "content": "content---project-nexus-markdown-page-393-a1a"
-  },
-  "/project-nexus/docs-670": {
-    "component": "component---theme-doc-page-1-be-9be",
-    "versionMetadata": "versionMetadata---project-nexus-docs-935-fd4"
+  "/project-nexus/docs-ad4": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb",
+    "__routeContextModule": "72f13c6b"
   },
   "/project-nexus/docs/discover/devices-63e": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-discover-devicesfe-4-109"
+    "component": "17896441",
+    "content": "fe4ff5d5"
   },
   "/project-nexus/docs/discover/install-38f": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-discover-installa-49-5ff"
+    "component": "17896441",
+    "content": "a497e442"
   },
   "/project-nexus/docs/discover/overview-e4d": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-discover-overviewb-5-f-845"
+    "component": "17896441",
+    "content": "b5f88ceb"
   },
   "/project-nexus/docs/notes/lavender/latest-619": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-notes-lavender-latestd-38-3be"
+    "component": "17896441",
+    "content": "d381e722"
   },
   "/project-nexus/docs/notes/lavender/v9.4-96f": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-notes-lavender-v-9-47-be-aa2"
+    "component": "17896441",
+    "content": "7beb2e3e"
   },
   "/project-nexus/docs/notes/miatoll/latest-ce5": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-notes-miatoll-latest-3-df-ba8"
+    "component": "17896441",
+    "content": "3df9503b"
   },
   "/project-nexus/docs/notes/r5x/latest-7c5": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-notes-r-5-x-latest-43-a-fce"
+    "component": "17896441",
+    "content": "43a8a8c7"
   },
   "/project-nexus/docs/notes/whyred/latest-101": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-notes-whyred-latest-9-ca-f4f"
+    "component": "17896441",
+    "content": "9ca36f7c"
   },
   "/project-nexus/docs/teams-018": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---project-nexus-docs-teams-4-be-17b"
+    "component": "17896441",
+    "content": "4be52831"
   },
-  "/project-nexus/-78f": {
-    "component": "component---site-src-pages-index-jsc-4-f-f99",
-    "config": "config---project-nexus-5-e-9-690"
+  "/project-nexus/-3c8": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a",
+    "__routeContextModule": "d6285553"
   }
 }
