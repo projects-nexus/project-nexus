@@ -261,14 +261,26 @@ export default {
           }
         ]
       },
-      "additionalLanguages": []
+      "additionalLanguages": [],
+      "magicComments": [
+        {
+          "className": "theme-code-block-highlighted-line",
+          "line": "highlight-next-line",
+          "block": {
+            "start": "highlight-start",
+            "end": "highlight-end"
+          }
+        }
+      ]
     },
     "docs": {
-      "versionPersistence": "localStorage"
+      "versionPersistence": "localStorage",
+      "sidebar": {
+        "hideable": false,
+        "autoCollapseCategories": false
+      }
     },
     "metadata": [],
-    "hideableSidebar": false,
-    "autoCollapseSidebarCategories": false,
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3
@@ -279,7 +291,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/home/kawaaii/Desktop/GitHub/Nexus/Website/project-nexus/sidebars.js",
+          "sidebarPath": "/home/kawaaii/Desktop/GitHub/Project-Nexus/master/sidebars.js",
           "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/"
         },
         "blog": {
@@ -287,7 +299,7 @@ export default {
           "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/blog/"
         },
         "theme": {
-          "customCss": "/home/kawaaii/Desktop/GitHub/Nexus/Website/project-nexus/src/css/custom.css"
+          "customCss": "/home/kawaaii/Desktop/GitHub/Project-Nexus/master/src/css/custom.css"
         }
       }
     ]

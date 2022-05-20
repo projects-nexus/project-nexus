@@ -7,6 +7,7 @@
   "sourceDirName": ".",
   "slug": "/teams",
   "permalink": "/project-nexus/docs/teams",
+  "draft": false,
   "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/teams.md",
   "tags": [],
   "version": "current",

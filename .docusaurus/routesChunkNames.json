@@ -1,53 +1,59 @@
 {
-  "/project-nexus/markdown-page-a8d": {
-    "component": "1f391b9e",
-    "content": "393be207",
-    "__routeContextModule": "d6285553"
+  "/project-nexus/markdown-page-b7d": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "ff1d4671"
+    },
+    "content": "393be207"
   },
-  "/project-nexus/docs-ad4": {
-    "component": "1be78505",
-    "versionMetadata": "935f2afb",
-    "__routeContextModule": "72f13c6b"
+  "/project-nexus/docs-99d": {
+    "__comp": "1be78505",
+    "__context": {
+      "plugin": "0e0bc05d"
+    },
+    "versionMetadata": "935f2afb"
   },
   "/project-nexus/docs/discover/devices-63e": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "fe4ff5d5"
   },
   "/project-nexus/docs/discover/install-38f": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "a497e442"
   },
   "/project-nexus/docs/discover/overview-e4d": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "b5f88ceb"
   },
   "/project-nexus/docs/notes/lavender/latest-619": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "d381e722"
   },
   "/project-nexus/docs/notes/lavender/v9.4-96f": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "7beb2e3e"
   },
   "/project-nexus/docs/notes/miatoll/latest-ce5": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "3df9503b"
   },
   "/project-nexus/docs/notes/r5x/latest-7c5": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "43a8a8c7"
   },
   "/project-nexus/docs/notes/whyred/latest-101": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "9ca36f7c"
   },
   "/project-nexus/docs/teams-018": {
-    "component": "17896441",
+    "__comp": "17896441",
     "content": "4be52831"
   },
-  "/project-nexus/-3c8": {
-    "component": "c4f5d8e4",
-    "config": "5e9f5e1a",
-    "__routeContextModule": "d6285553"
+  "/project-nexus/-63a": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "ff1d4671"
+    },
+    "config": "5e9f5e1a"
   }
 }
