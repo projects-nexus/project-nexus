@@ -5,15 +5,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import chalk, {type Chalk} from 'chalk';
+import chalk from 'chalk';
 
 type InterpolatableValue = string | number | (string | number)[];
 
-const path = (msg: unknown): string => chalk.cyan(chalk.underline(msg));
-const name = (msg: unknown): string => chalk.blue(chalk.bold(msg));
+const path = (msg: unknown): string => chalk.cyan.underline(`"${msg}"`);
+const url = (msg: unknown): string => chalk.cyan.underline(msg);
+const name = (msg: unknown): string => chalk.blue.bold(msg);
 const code = (msg: unknown): string => chalk.cyan(`\`${msg}\``);
-const subdue: Chalk = chalk.gray;
-const num: Chalk = chalk.yellow;
+const subdue = (msg: unknown): string => chalk.gray(msg);
+const num = (msg: unknown): string => chalk.yellow(msg);
 
 function interpolate(
   msgs: TemplateStringsArray,
@@ -30,6 +31,8 @@ function interpolate(
       switch (flag[0]) {
         case 'path=':
           return path;
+        case 'url=':
+          return url;
         case 'number=':
           return num;
         case 'name=':
@@ -66,7 +69,7 @@ function info(
 ): void;
 function info(msg: unknown, ...values: InterpolatableValue[]): void {
   console.info(
-    `${chalk.cyan(chalk.bold('[INFO]'))} ${
+    `${chalk.cyan.bold('[INFO]')} ${
       values.length === 0
         ? stringify(msg)
         : interpolate(msg as TemplateStringsArray, ...values)
@@ -112,7 +115,7 @@ function success(
 ): void;
 function success(msg: unknown, ...values: InterpolatableValue[]): void {
   console.log(
-    `${chalk.green(chalk.bold('[SUCCESS]'))} ${
+    `${chalk.green.bold('[SUCCESS]')} ${
       values.length === 0
         ? stringify(msg)
         : interpolate(msg as TemplateStringsArray, ...values)
@@ -131,6 +134,7 @@ const logger = {
   bold: chalk.bold,
   dim: chalk.dim,
   path,
+  url,
   name,
   code,
   subdue,
@@ -145,7 +149,4 @@ const logger = {
 
 // TODO remove when migrating to ESM
 // logger can only be default-imported in ESM with this
-module.exports = logger;
-module.exports.default = logger;
-
-export default logger;
+export = logger;

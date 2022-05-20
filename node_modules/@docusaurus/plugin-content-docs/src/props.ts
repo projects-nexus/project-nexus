@@ -5,13 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import type {LoadedVersion, VersionTag, DocMetadata} from './types';
+import type {VersionTag} from './types';
 import type {
   SidebarItemDoc,
   SidebarItem,
   SidebarItemCategory,
   SidebarItemCategoryLink,
-  PropVersionDocs,
 } from './sidebars/types';
 import type {
   PropSidebars,
@@ -21,6 +20,9 @@ import type {
   PropTagDocList,
   PropTagDocListDoc,
   PropSidebarItemLink,
+  PropVersionDocs,
+  DocMetadata,
+  LoadedVersion,
 } from '@docusaurus/plugin-content-docs';
 import _ from 'lodash';
 import {createDocsByIdIndex} from './docs';
@@ -119,10 +121,10 @@ export function toVersionMetadataProp(
   return {
     pluginId,
     version: loadedVersion.versionName,
-    label: loadedVersion.versionLabel,
-    banner: loadedVersion.versionBanner,
-    badge: loadedVersion.versionBadge,
-    className: loadedVersion.versionClassName,
+    label: loadedVersion.label,
+    banner: loadedVersion.banner,
+    badge: loadedVersion.badge,
+    className: loadedVersion.className,
     isLast: loadedVersion.isLast,
     docsSidebars: toSidebarsProp(loadedVersion),
     docs: toVersionDocsProp(loadedVersion),
@@ -136,7 +138,7 @@ export function toTagDocListProp({
 }: {
   allTagsPath: string;
   tag: VersionTag;
-  docs: Pick<DocMetadata, 'id' | 'title' | 'description' | 'permalink'>[];
+  docs: DocMetadata[];
 }): PropTagDocList {
   function toDocListProp(): PropTagDocListDoc[] {
     const list = _.compact(
@@ -153,9 +155,10 @@ export function toTagDocListProp({
   }
 
   return {
-    name: tag.name,
+    label: tag.label,
     permalink: tag.permalink,
-    docs: toDocListProp(),
     allTagsPath,
+    count: tag.docIds.length,
+    items: toDocListProp(),
   };
 }

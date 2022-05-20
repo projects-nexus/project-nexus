@@ -7,12 +7,11 @@
 
 import type {PluginContentLoadedActions, RouteConfig} from '@docusaurus/types';
 import {docuHash, createSlugger} from '@docusaurus/utils';
+import type {FullVersion} from './types';
 import type {
   CategoryGeneratedIndexMetadata,
   DocMetadata,
-  LoadedVersion,
-} from './types';
-import type {PropCategoryGeneratedIndex} from '@docusaurus/plugin-content-docs';
+} from '@docusaurus/plugin-content-docs';
 import {toVersionMetadataProp} from './props';
 import logger from '@docusaurus/logger';
 
@@ -22,7 +21,7 @@ export async function createCategoryGeneratedIndexRoutes({
   docCategoryGeneratedIndexComponent,
   aliasedSource,
 }: {
-  version: LoadedVersion;
+  version: FullVersion;
   actions: PluginContentLoadedActions;
   docCategoryGeneratedIndexComponent: string;
   aliasedSource: (str: string) => string;
@@ -32,34 +31,11 @@ export async function createCategoryGeneratedIndexRoutes({
   async function createCategoryGeneratedIndexRoute(
     categoryGeneratedIndex: CategoryGeneratedIndexMetadata,
   ): Promise<RouteConfig> {
-    const {
-      sidebar,
-      title,
-      description,
-      slug,
-      permalink,
-      previous,
-      next,
-      image,
-      keywords,
-    } = categoryGeneratedIndex;
+    const {sidebar, ...prop} = categoryGeneratedIndex;
 
     const propFileName = slugs.slug(
-      `${version.versionPath}-${categoryGeneratedIndex.sidebar}-category-${categoryGeneratedIndex.title}`,
+      `${version.path}-${categoryGeneratedIndex.sidebar}-category-${categoryGeneratedIndex.title}`,
     );
-
-    const prop: PropCategoryGeneratedIndex = {
-      title,
-      description,
-      slug,
-      permalink,
-      image,
-      keywords,
-      navigation: {
-        previous,
-        next,
-      },
-    };
 
     const propData = await actions.createData(
       `${docuHash(`category/${propFileName}`)}.json`,
@@ -67,7 +43,7 @@ export async function createCategoryGeneratedIndexRoutes({
     );
 
     return {
-      path: permalink,
+      path: categoryGeneratedIndex.permalink,
       component: docCategoryGeneratedIndexComponent,
       exact: true,
       modules: {
@@ -123,7 +99,7 @@ export async function createDocRoutes({
 }
 
 export async function createVersionRoutes({
-  loadedVersion,
+  version,
   actions,
   docItemComponent,
   docLayoutComponent,
@@ -131,7 +107,7 @@ export async function createVersionRoutes({
   pluginId,
   aliasedSource,
 }: {
-  loadedVersion: LoadedVersion;
+  version: FullVersion;
   actions: PluginContentLoadedActions;
   docLayoutComponent: string;
   docItemComponent: string;
@@ -139,7 +115,7 @@ export async function createVersionRoutes({
   pluginId: string;
   aliasedSource: (str: string) => string;
 }): Promise<void> {
-  async function doCreateVersionRoutes(version: LoadedVersion): Promise<void> {
+  async function doCreateVersionRoutes(): Promise<void> {
     const versionMetadata = toVersionMetadataProp(pluginId, version);
     const versionMetadataPropPath = await actions.createData(
       `${docuHash(`version-${version.versionName}-metadata-prop`)}.json`,
@@ -162,12 +138,10 @@ export async function createVersionRoutes({
     }
 
     actions.addRoute({
-      path: version.versionPath,
-      // allow matching /docs/* as well
+      path: version.path,
+      // Allow matching /docs/* since this is the wrapping route
       exact: false,
-      // main docs component (DocPage)
       component: docLayoutComponent,
-      // sub-routes for each doc
       routes: await createVersionSubRoutes(),
       modules: {
         versionMetadata: aliasedSource(versionMetadataPropPath),
@@ -177,9 +151,9 @@ export async function createVersionRoutes({
   }
 
   try {
-    return await doCreateVersionRoutes(loadedVersion);
+    return await doCreateVersionRoutes();
   } catch (err) {
-    logger.error`Can't create version routes for version name=${loadedVersion.versionName}`;
+    logger.error`Can't create version routes for version name=${version.versionName}`;
     throw err;
   }
 }
