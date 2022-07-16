@@ -29,6 +29,12 @@ html[data-theme='dark'] .purple-text {
 .banner {
   padding: 4rem;
 }
+
+.footer,
+.footer-dark {
+  background: #000000;
+}
+
 /** In mobile view, reduce the padding */
 @media screen and (max-width: 966px) {
   .heroBanner {

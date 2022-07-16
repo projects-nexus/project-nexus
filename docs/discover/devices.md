@@ -13,7 +13,6 @@ Current supported devices include:
 - Poco F3 `alioth`
 - Poco X3 `surya`
 - Poco M2 Pro, Redmi Note 9S/ 9 Pro/ 9 Pro Max `miatoll`
-- Realme 5/5i `r5x`
 - Redmi Note 5 Pro `whyred`
 - Redmi Note 7 `lavender`
 - Redmi Note 9 Pro 5G/ Mi 10i 5G/ Mi 10T Lite/ Mi 10T Lite EEA `gauguin`

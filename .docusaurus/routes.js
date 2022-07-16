@@ -9,7 +9,7 @@ export default [
   },
   {
     path: '/project-nexus/docs',
-    component: ComponentCreator('/project-nexus/docs', '61a'),
+    component: ComponentCreator('/project-nexus/docs', '902'),
     routes: [
       {
         path: '/project-nexus/docs/discover/devices',
@@ -30,32 +30,8 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/project-nexus/docs/notes/lavender/latest',
-        component: ComponentCreator('/project-nexus/docs/notes/lavender/latest', '619'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/project-nexus/docs/notes/lavender/v9.4',
-        component: ComponentCreator('/project-nexus/docs/notes/lavender/v9.4', '96f'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/project-nexus/docs/notes/miatoll/latest',
-        component: ComponentCreator('/project-nexus/docs/notes/miatoll/latest', 'ce5'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/project-nexus/docs/notes/r5x/latest',
-        component: ComponentCreator('/project-nexus/docs/notes/r5x/latest', '7c5'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/project-nexus/docs/notes/whyred/latest',
-        component: ComponentCreator('/project-nexus/docs/notes/whyred/latest', '101'),
+        path: '/project-nexus/docs/notes/gauguin/latest',
+        component: ComponentCreator('/project-nexus/docs/notes/gauguin/latest', '83c'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

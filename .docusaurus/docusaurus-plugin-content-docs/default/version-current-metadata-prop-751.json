@@ -42,63 +42,15 @@
         "items": [
           {
             "type": "category",
-            "label": "miatoll",
+            "label": "gauguin",
             "collapsible": true,
             "collapsed": true,
             "items": [
               {
                 "type": "link",
-                "label": "Nexus Kernel X3",
-                "href": "/project-nexus/docs/notes/miatoll/latest",
-                "docId": "notes/miatoll/latest"
-              }
-            ]
-          },
-          {
-            "type": "category",
-            "label": "r5x",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Nexus Kernel",
-                "href": "/project-nexus/docs/notes/r5x/latest",
-                "docId": "notes/r5x/latest"
-              }
-            ]
-          },
-          {
-            "type": "category",
-            "label": "whyred",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Nexus Kernel",
-                "href": "/project-nexus/docs/notes/whyred/latest",
-                "docId": "notes/whyred/latest"
-              }
-            ]
-          },
-          {
-            "type": "category",
-            "label": "lavender",
-            "collapsible": true,
-            "collapsed": true,
-            "items": [
-              {
-                "type": "link",
-                "label": "Nexus Kernel V9.5",
-                "href": "/project-nexus/docs/notes/lavender/latest",
-                "docId": "notes/lavender/latest"
-              },
-              {
-                "type": "link",
-                "label": "Nexus Kernel V9.4",
-                "href": "/project-nexus/docs/notes/lavender/v9.4",
-                "docId": "notes/lavender/v9.4"
+                "label": "Nexus Kernel R1",
+                "href": "/project-nexus/docs/notes/gauguin/latest",
+                "docId": "notes/gauguin/latest"
               }
             ]
           }
@@ -128,37 +80,13 @@
     "discover/overview": {
       "id": "discover/overview",
       "title": "Project Nexus",
-      "description": "Yet another Kernel organization which aims to provide kernel having best stability, performance, latest updates and moreover the best user experience.",
+      "description": "Yet another Kernel Organization which aims to provide Stable kernel with decent performance, good battery backup and best user experience.",
       "sidebar": "tutorialSidebar"
     },
-    "notes/lavender/latest": {
-      "id": "notes/lavender/latest",
-      "title": "Nexus Kernel V9.5",
-      "description": "By : Prashant",
-      "sidebar": "tutorialSidebar"
-    },
-    "notes/lavender/v9.4": {
-      "id": "notes/lavender/v9.4",
-      "title": "Nexus Kernel V9.4",
-      "description": "By : Prashant",
-      "sidebar": "tutorialSidebar"
-    },
-    "notes/miatoll/latest": {
-      "id": "notes/miatoll/latest",
-      "title": "Nexus Kernel X3",
-      "description": "By : Yash",
-      "sidebar": "tutorialSidebar"
-    },
-    "notes/r5x/latest": {
-      "id": "notes/r5x/latest",
-      "title": "Nexus Kernel",
-      "description": "By : don eun",
-      "sidebar": "tutorialSidebar"
-    },
-    "notes/whyred/latest": {
-      "id": "notes/whyred/latest",
-      "title": "Nexus Kernel",
-      "description": "By : arnavpuranik",
+    "notes/gauguin/latest": {
+      "id": "notes/gauguin/latest",
+      "title": "Nexus Kernel R1",
+      "description": "By : kawaaii",
       "sidebar": "tutorialSidebar"
     },
     "teams": {
