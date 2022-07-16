@@ -7,7 +7,7 @@
 
 import {useEffect} from 'react';
 import {useHistory} from '@docusaurus/router';
-import {useDynamicCallback} from './reactUtils';
+import {useEvent} from './reactUtils';
 import type {Location, Action} from 'history';
 
 type HistoryBlockHandler = (location: Location, action: Action) => void | false;
@@ -18,12 +18,12 @@ type HistoryBlockHandler = (location: Location, action: Action) => void | false;
  * will be blocked/cancelled.
  */
 function useHistoryActionHandler(handler: HistoryBlockHandler): void {
-  const {block} = useHistory();
-  const stableHandler = useDynamicCallback(handler);
+  const history = useHistory();
+  const stableHandler = useEvent(handler);
   useEffect(
     // See https://github.com/remix-run/history/blob/main/docs/blocking-transitions.md
-    () => block((location, action) => stableHandler(location, action)),
-    [block, stableHandler],
+    () => history.block((location, action) => stableHandler(location, action)),
+    [history, stableHandler],
   );
 }
 

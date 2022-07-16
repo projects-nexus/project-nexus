@@ -5,20 +5,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import fs from 'fs-extra';
+import path from 'path';
+import logger from '@docusaurus/logger';
+import {DEFAULT_PLUGIN_ID} from '@docusaurus/utils';
 import {
   getVersionsFilePath,
   getVersionDocsDirPath,
   getVersionSidebarsPath,
   getDocsDirPathLocalized,
+  readVersionsFile,
 } from './versions/files';
 import {validateVersionName} from './versions/validation';
-import fs from 'fs-extra';
-import path from 'path';
-import type {PluginOptions} from '@docusaurus/plugin-content-docs';
 import {loadSidebarsFileUnsafe} from './sidebars';
 import {CURRENT_VERSION_NAME} from './constants';
-import {DEFAULT_PLUGIN_ID} from '@docusaurus/utils';
-import logger from '@docusaurus/logger';
+import type {PluginOptions} from '@docusaurus/plugin-content-docs';
 import type {LoadContext} from '@docusaurus/types';
 
 async function createVersionedSidebarFile({
@@ -53,7 +54,7 @@ async function createVersionedSidebarFile({
 
 // Tests depend on non-default export for mocking.
 export async function cliDocsVersionCommand(
-  version: string,
+  version: unknown,
   {id: pluginId, path: docsPath, sidebarPath}: PluginOptions,
   {siteDir, i18n}: LoadContext,
 ): Promise<void> {
@@ -64,17 +65,12 @@ export async function cliDocsVersionCommand(
 
   try {
     validateVersionName(version);
-  } catch (e) {
+  } catch (err) {
     logger.info`${pluginIdLogPrefix}: Invalid version name provided. Try something like: 1.0.0`;
-    throw e;
+    throw err;
   }
 
-  // Load existing versions.
-  let versions = [];
-  const versionsJSONFile = getVersionsFilePath(siteDir, pluginId);
-  if (await fs.pathExists(versionsJSONFile)) {
-    versions = await fs.readJSON(versionsJSONFile);
-  }
+  const versions = (await readVersionsFile(siteDir, pluginId)) ?? [];
 
   // Check if version already exists.
   if (versions.includes(version)) {
@@ -89,13 +85,17 @@ export async function cliDocsVersionCommand(
 
   await Promise.all(
     i18n.locales.map(async (locale) => {
+      const localizationDir = path.resolve(
+        siteDir,
+        i18n.path,
+        i18n.localeConfigs[locale]!.path,
+      );
       // Copy docs files.
       const docsDir =
         locale === i18n.defaultLocale
           ? path.resolve(siteDir, docsPath)
           : getDocsDirPathLocalized({
-              siteDir,
-              locale,
+              localizationDir,
               pluginId,
               versionName: CURRENT_VERSION_NAME,
             });
@@ -118,8 +118,7 @@ export async function cliDocsVersionCommand(
         locale === i18n.defaultLocale
           ? getVersionDocsDirPath(siteDir, pluginId, version)
           : getDocsDirPathLocalized({
-              siteDir,
-              locale,
+              localizationDir,
               pluginId,
               versionName: version,
             });
@@ -137,7 +136,7 @@ export async function cliDocsVersionCommand(
   // Update versions.json file.
   versions.unshift(version);
   await fs.outputFile(
-    versionsJSONFile,
+    getVersionsFilePath(siteDir, pluginId),
     `${JSON.stringify(versions, null, 2)}\n`,
   );
 

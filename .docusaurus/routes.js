@@ -4,12 +4,12 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/project-nexus/markdown-page',
-    component: ComponentCreator('/project-nexus/markdown-page', 'b7d'),
+    component: ComponentCreator('/project-nexus/markdown-page', '2b1'),
     exact: true
   },
   {
     path: '/project-nexus/docs',
-    component: ComponentCreator('/project-nexus/docs', '99d'),
+    component: ComponentCreator('/project-nexus/docs', '61a'),
     routes: [
       {
         path: '/project-nexus/docs/discover/devices',
@@ -69,7 +69,7 @@ export default [
   },
   {
     path: '/project-nexus/',
-    component: ComponentCreator('/project-nexus/', '63a'),
+    component: ComponentCreator('/project-nexus/', '3a7'),
     exact: true
   },
   {

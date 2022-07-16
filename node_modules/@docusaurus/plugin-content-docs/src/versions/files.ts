@@ -7,6 +7,7 @@
 
 import path from 'path';
 import fs from 'fs-extra';
+import {getPluginI18nPath, DEFAULT_PLUGIN_ID} from '@docusaurus/utils';
 import {
   VERSIONS_JSON_FILE,
   VERSIONED_DOCS_DIR,
@@ -14,7 +15,6 @@ import {
   CURRENT_VERSION_NAME,
 } from '../constants';
 import {validateVersionNames} from './validation';
-import {getPluginI18nPath, DEFAULT_PLUGIN_ID} from '@docusaurus/utils';
 import type {
   PluginOptions,
   VersionMetadata,
@@ -55,19 +55,16 @@ export function getVersionSidebarsPath(
 }
 
 export function getDocsDirPathLocalized({
-  siteDir,
-  locale,
+  localizationDir,
   pluginId,
   versionName,
 }: {
-  siteDir: string;
-  locale: string;
+  localizationDir: string;
   pluginId: string;
   versionName: string;
 }): string {
   return getPluginI18nPath({
-    siteDir,
-    locale,
+    localizationDir,
     pluginName: 'docusaurus-plugin-content-docs',
     pluginId,
     subPaths: [
@@ -89,13 +86,13 @@ export function getVersionsFilePath(siteDir: string, pluginId: string): string {
  * @throws Throws if validation fails, i.e. `versions.json` doesn't contain an
  * array of valid version names.
  */
-async function readVersionsFile(
+export async function readVersionsFile(
   siteDir: string,
   pluginId: string,
 ): Promise<string[] | null> {
   const versionsFilePath = getVersionsFilePath(siteDir, pluginId);
   if (await fs.pathExists(versionsFilePath)) {
-    const content = await fs.readJSON(versionsFilePath);
+    const content: unknown = await fs.readJSON(versionsFilePath);
     validateVersionNames(content);
     return content;
   }
@@ -175,8 +172,7 @@ export async function getVersionMetadataPaths({
 > {
   const isCurrent = versionName === CURRENT_VERSION_NAME;
   const contentPathLocalized = getDocsDirPathLocalized({
-    siteDir: context.siteDir,
-    locale: context.i18n.currentLocale,
+    localizationDir: context.localizationDir,
     pluginId: options.id,
     versionName,
   });

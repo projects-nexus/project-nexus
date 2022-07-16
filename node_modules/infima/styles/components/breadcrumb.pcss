@@ -43,6 +43,9 @@
           var(--ifm-breadcrumb-size-multiplier) *
           var(--ifm-breadcrumb-separator-size-multiplier)
       );
+      /*rtl:raw:
+      transform: rotate(180deg);
+      */
     }
 
     &--active {
@@ -68,7 +71,7 @@
       );
     @mixin transition background color;
 
-    &:hover {
+    &:any-link:hover {
       background: var(--ifm-breadcrumb-item-background-active);
       text-decoration: none;
     }

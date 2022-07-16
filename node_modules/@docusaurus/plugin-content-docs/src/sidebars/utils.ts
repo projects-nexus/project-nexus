@@ -5,6 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import _ from 'lodash';
+import {toMessageRelativeFilePath} from '@docusaurus/utils';
 import type {
   Sidebars,
   Sidebar,
@@ -18,9 +20,6 @@ import type {
   SidebarItemCategoryWithGeneratedIndex,
   SidebarNavigationItem,
 } from './types';
-
-import _ from 'lodash';
-import {toMessageRelativeFilePath} from '@docusaurus/utils';
 import type {
   DocMetadataBase,
   PropNavigationLink,
@@ -81,6 +80,9 @@ export function collectSidebarCategories(
 }
 export function collectSidebarLinks(sidebar: Sidebar): SidebarItemLink[] {
   return collectSidebarItemsOfType('link', sidebar);
+}
+export function collectSidebarRefs(sidebar: Sidebar): SidebarItemDoc[] {
+  return collectSidebarItemsOfType('ref', sidebar);
 }
 
 // /!\ docId order matters for navigation!
@@ -258,7 +260,7 @@ export function createSidebarsUtils(sidebars: Sidebars): SidebarsUtils {
     ): boolean {
       return (
         item.type === 'category' &&
-        item.link?.type === 'generated-index' &&
+        item.link.type === 'generated-index' &&
         item.link.permalink === categoryGeneratedIndexPermalink
       );
     }
