@@ -1,6 +1,6 @@
 {
-  "name": "ProjectNexus",
-  "version": "0.0.0",
+  "name": "projectnexus",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -21,6 +21,7 @@
     "@svgr/webpack": "^6.2.1",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
+    "got": "11.8.5",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -44,5 +45,20 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "description": "This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projects-nexus/project-nexus.git"
+  },
+  "author": "kawaaii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projects-nexus/project-nexus/issues"
+  },
+  "homepage": "https://github.com/projects-nexus/project-nexus#readme"
 }
