@@ -1,0 +1,27 @@
+{
+  "unversionedId": "notes/gauguin/latest",
+  "id": "notes/gauguin/latest",
+  "title": "Nexus Kernel R1",
+  "description": "By : kawaaii",
+  "source": "@site/docs/notes/gauguin/latest.md",
+  "sourceDirName": "notes/gauguin",
+  "slug": "/notes/gauguin/latest",
+  "permalink": "/project-nexus/docs/notes/gauguin/latest",
+  "draft": false,
+  "editUrl": "https://github.com/projects-nexus/project-nexus/edit/master/docs/notes/gauguin/latest.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/project-nexus/docs/discover/install"
+  },
+  "next": {
+    "title": "Team",
+    "permalink": "/project-nexus/docs/teams"
+  }
+}

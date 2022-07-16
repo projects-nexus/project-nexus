@@ -67,7 +67,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} j. Built with Docusaurus`,
+      copyright: `Copyright © ${new Date().getFullYear()} Project Nexus j. Built with Docusaurus`,
     },
     prism: {
       theme: lightCodeTheme,

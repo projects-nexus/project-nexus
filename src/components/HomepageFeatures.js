@@ -20,7 +20,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Regular Update',
+    title: 'Latest Update',
     description: (
       <>
 

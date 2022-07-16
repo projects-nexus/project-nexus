@@ -26,28 +26,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "notes/lavender/latest",
-              "path": "/project-nexus/docs/notes/lavender/latest",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "notes/lavender/v9.4",
-              "path": "/project-nexus/docs/notes/lavender/v9.4",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "notes/miatoll/latest",
-              "path": "/project-nexus/docs/notes/miatoll/latest",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "notes/r5x/latest",
-              "path": "/project-nexus/docs/notes/r5x/latest",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "notes/whyred/latest",
-              "path": "/project-nexus/docs/notes/whyred/latest",
+              "id": "notes/gauguin/latest",
+              "path": "/project-nexus/docs/notes/gauguin/latest",
               "sidebar": "tutorialSidebar"
             },
             {
