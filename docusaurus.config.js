@@ -6,7 +6,7 @@ module.exports = {
   title: "Project Nexus",
   tagline: 'Yet Another Custom Kernels For Android Devices',
   url: 'https://Project-Nexus.github.io', 
-  baseUrl: '/project-nexus/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/logo.svg',
