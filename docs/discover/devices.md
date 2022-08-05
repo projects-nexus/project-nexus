@@ -15,7 +15,6 @@ Current supported devices include:
 - Redmi Note 9 Pro 5G/ Mi 10i 5G/ Mi 10T Lite/ Mi 10T Lite EEA `gauguin`
 - Motorola G5s Plus `sanders` - EOL
 - Redmi 3S / 3X `land`
-- Redmi 4 Standard `prada`
 - Redmi 4A `rolex`
 - Redmi 4X `santoni`
 - Redmi 5A `riva`
